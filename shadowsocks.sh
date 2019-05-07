@@ -8,14 +8,8 @@ export PATH
 #=================================================================#
 
 clear
-echo
 echo "#############################################################"
-echo "# One click Install Shadowsocks-Python server               #"
-echo "# WeChat：422895480                                         #"
-echo "# Author: FJ                                                #"
-echo "# Github: https://github.com/Fenjan00/FJ.git                #"
-echo "#############################################################"
-echo
+
 
 libsodium_file="libsodium-1.0.17"
 libsodium_url="https://github.com/jedisct1/libsodium/releases/download/1.0.17/libsodium-1.0.17.tar.gz"
