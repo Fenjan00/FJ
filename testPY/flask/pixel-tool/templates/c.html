@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>下单页</title>
+    <style>
+        * {
+            font-size: 40px;
+        }
+    </style>
+<script>
+    window.bgdataLayer = window.bgdataLayer || [];
+    function bge(){bgdataLayer.push(arguments);}
+    bge('init', "901284212887097600");
+    bge('event', 'page_view');
+</script>
+<script async src="https://api.imotech.video/ad/events.js?pixel_id=901284212887097600"></script>
+
+
+</head>
+<body>
+    <a href="http://172.24.207.18:5000/test2" ><h1>本域跳去第二个页面</h1></a>
+    <button onclick="bge_button()"><h1>按钮点击</h1></button>
+    <button onclick="bge_consult()"><h1>咨询</h1></button>
+    <h2>电商</h2>
+    <button onclick="bge_ec_register()"><h1>用户注册</h1></button>
+    <button onclick="bge_ec_detail_view()"><h1>商品详情页浏览</h1></button>
+    <button onclick="bge_ec_add_cart()"><h1>加入购物车</h1></button>
+    <button onclick="bge_ec_order()"><h1>下单</h1></button>
+    <button onclick="bge_ec_purchase()"><h1>支付完成</h1></button>
+    <h2>表单提交</h2>
+    <button onclick="bge_form_button()"><h1>按钮点击（表单）</h1></button>
+    <button onclick="bge_form_detail()"><h1>详情页浏览（表单）</h1></button>
+    <button onclick="bge_form()"><h1>表单填写</h1></button>
+    <h2>电话咨询</h2>
+    <button onclick="bge_phone_button()"><h1>按钮点击（电话）</h1></button>
+    <button onclick="bge_phone_detail()"><h1>详情页浏览（电话）</h1></button>
+    <button onclick="bge_phone_consult()"><h1>电话咨询</h1></button>
+    <h2>应用推广</h2>
+    <button onclick="bge_app_button()"><h1>按钮点击（app）</h1></button>
+    <button onclick="bge_app_detail()"><h1>详情页浏览（app）</h1></button>
+    <button onclick="bge_app_download()"><h1>点击下载</h1></button>
+
+
+    <script>
+    function bge_button() {
+        bge('event', 'button');
+    }
+    </script>
+    <script>
+    function bge_consult() {
+        bge('event', 'consult');
+    }
+    </script>
+    <script>
+    function bge_ec_register() {
+        bge('event', 'ec_register');
+    }
+    </script>
+    <script>
+    function bge_ec_detail_view() {
+        bge('event', 'ec_detail_view');
+    }
+    </script>
+    <script>
+    function bge_ec_add_cart() {
+        bge('event', 'ec_add_cart');
+    }
+    </script>
+    <script>
+    function bge_ec_order() {
+        bge('event', 'ec_order');
+    }
+    </script>
+    <script>
+    function bge_ec_purchase() {
+        bge('event', 'ec_purchase');
+    }
+    </script>
+    <script>
+    function bge_form_button() {
+        bge('event', 'form_button', {currency: "USD", value: 1.5});
+    }
+    </script>
+    <script>
+    function bge_form_detail() {
+        bge('event', 'form_detail');
+    }
+    </script>
+    <script>
+    function bge_form() {
+        bge('event', 'form');
+    }
+    </script>
+    <script>
+    function bge_phone_button() {
+        bge('event', 'phone_button');
+    }
+    </script>
+    <script>
+    function bge_phone_detail() {
+        bge('event', 'phone_detail');
+    }
+    </script>
+    <script>
+    function bge_phone_consult() {
+        bge('event', 'phone_consult');
+    }
+    </script>
+    <script>
+    function bge_app_button() {
+        bge('event', 'app_button');
+    }
+    </script>
+    <script>
+    function bge_app_detail() {
+        bge('event', 'app_detail');
+        bge('event', 'app_download');
+    }
+    </script>
+    <script>
+    function bge_app_download() {
+        bge('event', 'app_download');
+    }
+    </script>
+
+</body>
+</html>

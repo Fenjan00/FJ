@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <style>
+        * {
+            font-size: 40px;
+        }
+    </style>
+<script>
+    window.bgdataLayer = window.bgdataLayer || [];
+    function bge(){bgdataLayer.push(arguments);}
+    bge('init', "901284212887097600");
+    bge('event', 'page_view');
+</script>
+<script async src="https://gray-api.imotech.video/ad/events.js?pixel_id=901284212887097600"></script>
+    <!--<script>-->
+        <!--window.addEventListener('load', function () {-->
+            <!--window.bgdataLayer = window.bgdataLayer || [];-->
+            <!--window.bge = function () {-->
+                <!--bgdataLayer.push(arguments);-->
+            <!--};-->
+            <!--bge('init', "90848419229339904");-->
+            <!--bge('event', 'page_view');-->
+
+            <!--var s = document.createElement('script');-->
+            <!--s.src = 'https://gray-api.imotech.video/ad/events.js?pixel_id=90848419229339904';-->
+            <!--document.head.appendChild(s);-->
+        <!--});-->
+    <!--</script>-->
+</head>
+
+<body>
+    <button onclick="bge_form_button()">触发form_button事件</button>
+    <h5>跨域需绑 host：172.24.207.18 pixel1.test</h5>
+    <h5>test2</h5>
+<!--     <a href="http://pixel1.test:5000/test2" target="_blank"><h1>跨域跳去第二个页面(新窗口)</h1></a>
+    <a href="http://pixel1.test:5000/test2" ><h1>跨域跳去第二个页面</h1></a> -->
+    <a href="http://172.24.207.18:5000/test2" ><h1>本域跳去第二个页面</h1></a>
+    <a href="http://172.24.207.18:5000/test2" target="_blank"><h1>本域跳去第二个页面(新窗口)</h1></a>
+    <a href="http://172.24.207.18:5000/test3" ><h1>本域跳去第3个页面</h1></a>
+
+    <!--<img src="https://static-web.likee.com/as/common-static/ads-home/favicon.png">-->
+
+    <img src="https://cdn1.codashop.com/S/content/common/images/mno/bigo_640x241.png">
+
+    <!--<img src="https://www.spotx.tv">-->
+
+    <script>
+    function bge_form_button() {
+        bge('event', 'form_button');
+    }
+    // const key = localStorage.getItem('myKey')
+    // const div = document.createElement('div')
+    // div.innerText = key;
+    // document.body.appendChild(div)
+    // alert(key)
+    </script>
+</body>
+</html>

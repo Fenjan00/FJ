@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ name }} platform</title>
+{#    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">#}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <title>The jQuery Example</title>
+
+{#    <h2>jQuery-AJAX in FLASK. Execute function on button click</h2>#}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script type=text/javascript> $(function() { $("#mybutton").click(function (event) { $.getJSON('/SomeFunction', { },
+    function(data) { }); return false; }); }); </script>
+{#        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>#}
+{#    <script type=text/javascript> $(function() { $("#mybutton2").click(function (event) { $.getJSON('/SomeFunction2', { },#}
+{#    function(data) { }); return false; }); }); </script>#}
+</head>
+<body>
+{#    <img src="{{ url_for('static', filename='foo.jpg') }}">#}
+<h2>
+    最新安卓测试包下载
+    <img alt="Avatar" src="{{ url_for('static', filename='images/pkg.jpg') }}">
+{#    <button onclick="pkg_update()">刷新最新包</button>#}
+    <input type = "button" id = "mybutton" value = "刷新最新安卓包QRcode" />
+{#    {{ name }}'#}
+</h2>
+</h2>
+    <form action = "http://localhost:5000/SomeFunction2" method = "post">
+    <p><input type = "button" id = "mybutton2" value = "生成指定安卓版本号QRcode" /><p>
+    <p><input type="text" id="pkgumb" required
+        minlength="4" maxlength="8" size="10"><p>
+    </form>
+</h2>
+    {# 使用 length 过滤器获取 movies 变量的长度 #}
+    <p>{{ movies|length }} Titles</p>
+    <ul class="movie-list">
+        {% for movie in movies %}  {# 迭代 movies 变量 #}
+        <li>{{ movie.title }} - {{ movie.year }}</li>  {# 等同于 movie['title'] #}
+        {% endfor %}  {# 使用 endfor 标签结束 for 语句 #}
+    </ul>
+    <footer>
+        <small>&copy; 包体下载url <a href="http://docs.xinyu100.com/pcgo/android/daily/">点击进入</a></small>
+    </footer>
+    <img alt="Walking Totoro" class="totoro" src="{{ url_for('static', filename='images/totoro.gif')}}">
+</body>
+</html>

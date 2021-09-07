@@ -1,0 +1,5 @@
+{
+  "pixel-test.py::test1": true,
+  "pixel-test.py::test2": true,
+  "pixel-test.py::test3": true
+}

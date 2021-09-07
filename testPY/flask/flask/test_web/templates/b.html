@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>下单页</title>
+    <script>
+	window.bgdataLayer = window.bgdataLayer || [];
+	function bge(){bgdataLayer.push(arguments);}
+	<!--bge('init', "90820359416058112");-->
+	bge('init', "90953251860287744");
+	bge('event', 'page_view');
+</script>
+<script async src="https://gray-api.imotech.video/ad/events.js?pixel_id=90953251860287744"></script>
+<!--<script async src="https://api.imotech.video/ad/events.js?pixel_id=90953251860287744"></script>-->
+</head>
+<body>
+    <button onclick="bge_form()"><h1>触发form事件</h1></button>
+    <h5>跨域需绑host：172.24.118.38 pixel1.test</h5>
+    <!--<a href="http://pixel1.test:5000/test3" target="_blank"><h1>跨域跳去第三个页面（新窗口）</h1></a>-->
+    <!--<a href="http://pixel1.test:5000/test3"><h1>跨域跳去第三个页面</h1></a>-->
+    <a href="http://172.24.118.44:5000/test3"><h1>本域跳去第三个页面流览</h1></a>
+
+    <script>
+        function bge_form() {
+            bge('event', 'form', {currency: "USD", value: 1.25});
+        }
+    </script>
+</body>
+</html>
